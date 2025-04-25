@@ -77,16 +77,21 @@
       max-height: 400px;
       object-fit: cover;
     }
+    .logo-img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .logo-img:hover {
+      transform: scale(1.05);
+    }
+    .tournament-name {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
   </style>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DDNX0B9ZF8"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-DDNX0B9ZF8');
-	</script>
 </head>
 <body>
 
@@ -155,6 +160,31 @@
 	  </div>
 	</section>
 
+  <section class="container mt-5">
+    <h2 class="section-title text-center">Torneos en los que hemos participado</h2>
+    <div class="row justify-content-center text-center">
+	  <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <img src="minibasket.png" alt="Logo Torneo 2" class="logo-img">
+        <div class="tournament-name">MiniBasket NL</div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <img src="yboa.png" alt="Logo Torneo 2" class="logo-img">
+        <div class="tournament-name">YBOA</div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <img src="elite.png" alt="Logo Torneo 1" class="logo-img">
+        <div class="tournament-name">Elite</div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <img src="ayon.png" alt="Logo Torneo 3" class="logo-img">
+        <div class="tournament-name">Ayon</div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <img src="felinos.png" alt="Logo Torneo 3" class="logo-img">
+        <div class="tournament-name">Felinos</div>
+      </div>
+    </div>
+  </section>
 
 
   <section class="container mt-5">
